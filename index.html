@@ -15,7 +15,7 @@
                 <li> <a href="#about">About</a></li>
                 <li> <a href="#experience">Experience</a></li>
                 <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#contacts">Contacts</a></li>
+                <li> <a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -31,10 +31,27 @@
                 <li> <a href="#about" onclick="toggleMenu()">About</a></li>
                 <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li> <a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/cv_pic.png" alt="Mikkel Dolmer profile picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Mikkel Dolmer</h1>
+            <p class="section__text__p2">MSc Software Engineering</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/mikkel-dolmer/'">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
