@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Mikkel Dolmer</div>
-        <div>
-            <ul class="nav-links">
-                <li> <a href="#about">About</a></li>
-                <li> <a href="#experience">Experience</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Mikkel Dolmer</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
-                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/cv_pic.png" alt="Mikkel Dolmer profile picture">
-        </div>
-        <div class="section__text">
-            <h1 class="title">Mikkel Dolmer</h1>
-            <p class="section__text__p2">MSc Software Engineering</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/cv_mikkeldolmer.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/mikkel-dolmer/'">
-                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Dolmer1'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <h1>About</h1>
-    </section>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mikkel Dolmer - CV</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <article class="scroll-wrapper">
+            <section class="information scroll-section" id="frontpage">
+                <img src="assets/cv_pic-transparent.png" alt="Picture of me" class="profile-picture">
+                <div class="center">
+                    <h1>↑</h1>
+                    <h1>Mikkel Dolmer</h1>
+                    <p class="subtitle">MSc Software Engineering</p>
+                    <p class="subtitle">Software Pilot @ Trifork</p>               
+                </div>
+                <a href="#about" class="bottom-scroll center">
+                    <div style="font-size: 1rem;">More about me<div>
+                    <div class="arrow">↓</div>
+                </a>
+            </section>
+            <section class="scroll-section" id="about">
+                <a href="#frontpage" class="top-scroll center">
+                    <div class="arrow">↑</div>
+                    <div style="font-size: 1rem;">Go back</div>
+                </a>
+                <div style="margin-top: 5em; display: flex; flex-direction: column; row-gap: 10em;">
+                    <div>
+                        <h2>Master's thesis</h2>
+                        <p>Here I will eventually write stuff about my master thesis research</p>
+                        <p>You can read the published version of my master's thesis <a href="https://ceur-ws.org/Vol-4038/paper_6.pdf">here</a>.</p>
+                        <p>You can see my challenge award for my master's thesis <a href="https://vbn.aau.dk/ws/portalfiles/portal/798938894/PHOTO-2025-09-25-22-57-48.jpg">here</a>.</p>
+
+                        
+                    </div>
+                    <div>
+                        <h2>CV</h2>
+                        <p>You can find the newest version of my CV <a href="assets/cv_mikkeldolmer.pdf">here</a>.</p>
+                    </div>
+                    <div>
+                        <h2>Contact information</h2>
+                        <div style="display: flex; flex-direction: row; column-gap: 2rem; margin-top: 1rem;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="assets/mail-transparent.png" class="platform-image">
+                                <p style="margin: 0;">mikkel@dolmer.dk</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="assets/smartphone-transparent.png" class="platform-image">
+                                <p style="margin: 0;">+4560654746</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Platforms</h2>
+                        <div style="display: flex; flex-direction: row; column-gap: 2rem; margin-top: 1rem">
+                            <a href="https://www.linkedin.com/in/mikkel-dolmer/"><img src="assets/linkedin.png" class="platform-image"></a>
+                            <a href="https://github.com/Dolmer1/"><img src="assets/github.png" class="platform-image"></a>
+                            <a href="https://www.instagram.com/mikkel_dolmer/"><img src="assets/instagram-transparent.png" style="width: 50px"></a>
+                        </div>
+                    </div> 
+                </div> 
+            </section>
+        </article>
+    </body>
 </html>
