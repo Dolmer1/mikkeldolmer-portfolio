@@ -1,92 +1,90 @@
-body{
-    background-color:antiquewhite;
-    font-family:monospace;
-    margin: 0 0;
+body {
+  background-color: antiquewhite;
+  font-family: monospace;
+  margin: 0 0;
 }
 
 h1 {
-    font-size: 5rem;
-    margin: 0;
+  font-size: 5rem;
+  margin: 0;
 }
 
-
 h2 {
-    font-size: 2.5rem;
-    margin:0;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 p {
-    font-size: 1rem;
-}
-
-.profile-picture {
-    max-width: 366px;
+  font-size: 1rem;
 }
 
 .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 2em;
-    position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  position: relative;
 }
 
-.center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem 0;
-    font-weight:bold;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
 }
 
 .bottom-scroll {
-    margin-top: auto;
-    padding-bottom: 1%;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  padding-bottom: 1%;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .top-scroll {
-    margin-bottom: auto;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  margin-bottom: auto;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .scroll-wrapper {
-    height: 100vh;
-    height: 100dvh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroll-section {
-    height: 100%;
-    scroll-snap-align: start;
+  height: 100%;
+  scroll-snap-align: start;
 }
 
 .arrow {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
-.platform-image{
-    width: 50px;
+.platform-image {
+  width: 50px;
 }
 
 #about {
-    min-height: 100vh;
-    padding: 0 2rem;
-    scroll-margin-top: 0;
+  padding: 0 2rem;
+  scroll-margin-top: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-
+#frontpage {
+  min-height: 100vh;
+  padding: 0 2rem;
+  scroll-margin-top: 0;
+}
 
 @media (max-width: 660px) {
   h1 {
@@ -98,11 +96,7 @@ p {
   .subtitle {
     font-size: 1.125rem;
   }
-  .platform-image{
+  .platform-image {
     width: 25px;
   }
-}
-
-@media (max-width: 1315px) {
-  
 }
