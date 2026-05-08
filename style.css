@@ -81,26 +81,6 @@ p {
   background: black;
 }
 
-.nav-arrow {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 3rem;
-  padding: 0.2rem;
-  line-height: 1;
-  color: black;
-  transition: opacity 0.2s;
-}
-
-.nav-arrow:hover {
-  opacity: 1;
-}
-
-.nav-arrow:disabled {
-  opacity: 0.15;
-  cursor: default;
-}
-
 #about {
   padding: 0 2.5rem;
   display: flex;
