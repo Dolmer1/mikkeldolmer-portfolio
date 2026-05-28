@@ -101,6 +101,9 @@ p {
   row-gap: 5em;
   margin-top: 2.5em;
 }
+#master-thesis-div {
+    width: 50vw;
+  }
 
 @media (max-width: 660px) {
   h1 {
@@ -133,4 +136,8 @@ p {
     transition: background 0.3s;
     cursor: pointer;
   }
+  #master-thesis-div{
+    width:auto;
+  }
+  
 }
