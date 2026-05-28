@@ -102,8 +102,12 @@ p {
   margin-top: 2.5em;
 }
 #master-thesis-div {
-    width: 50vw;
+    width: 75vw;
   }
+
+.general-font{
+  font-size: 1.5rem;
+}
 
 @media (max-width: 660px) {
   h1 {
@@ -136,8 +140,14 @@ p {
     transition: background 0.3s;
     cursor: pointer;
   }
-  #master-thesis-div{
-    width:auto;
+
+}
+
+@media (max-width: 1250px) {
+    .general-font{
+    font-size:initial
   }
-  
+    #master-thesis-div{
+    width:auto;
+  } 
 }
