@@ -1,1 +1,1 @@
-[Visit my portfolio][https://cv.dolmer.dk]
+[Visit my portfolio](https://cv.dolmer.dk)
